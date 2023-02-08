@@ -19,7 +19,7 @@ def dis3(b, a, d):
     print(f'x1 = {round(x1, 3)}', f'x2 = {round(x2, 5)}')
 
 
-def main(a, b, c):
+def m(a, b, c):
     d = dis(a, b, c)
     if d > 0:
         dis3(b, a, d)
@@ -29,5 +29,13 @@ def main(a, b, c):
         dis1()
 
 
+def main():
+    print('Решу уравнение')
+    a = int(input(' Первое число: '))
+    b = int(input('Второе: '))
+    c = int(input('Третье: '))
+    return m(a, b, c)
+
+
 if __name__ ==  '__main__':
-    main(1, 4, 2)
+    main()
